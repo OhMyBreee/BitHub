@@ -51,7 +51,7 @@ form_login.addEventListener('submit', e=> {
     }
 
     if(tempvalid1 == tempvalid2 == 1){
-        window.location.href = "../../../HCI_RevisiHome_Jeisen/index.html"; 
+        window.location.href = "../../../BitHub/HCI_RevisiHome_Jeisen/index.html"; 
     }
 
 })
@@ -123,6 +123,6 @@ form_register.addEventListener('submit', e=> {
     console.log(tempvalid2);
     console.log(tempvalid3);
     if(tempvalid1 == valid == tempvalid3== tempvalid2 == 1){
-        window.location.href = "../../../HCI_RevisiHome_Jeisen/index.html"; 
+        window.location.href = "../../../BitHub/HCI_RevisiHome_Jeisen/index.html"; 
     }
 })
