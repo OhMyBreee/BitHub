@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Submit</title>
+    <link rel="stylesheet" href="FS.css">
+</head>
+<body>
+    <div >
+        <img src="assets/bg_bHub2.jpg" alt="no img found" class="background">
+    </div>
+    <div class="content">
+        <div class="title-and-picture">
+            <img src="assets/profilepic.png" class="user-profile-picture" alt="User Profile Picture">
+            <form class="title">
+                <input type="search" placeholder="Search..." class="inter-font">
+            </form>
+        </div>
+        <div class="subforum-description">
+            <textarea type="comments" placeholder="Add your comments..." required></textarea>
+        </div>
+        <div class="button-container">
+            <div class="cancel-button">Cancel</div>
+            <div class="submit-button">Submit</div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cancelButton = document.querySelector('.cancel-button');
+
+            cancelButton.addEventListener('click', function() {
+                window.location.href = "discussionForm.html"; 
+            });
+            var submitButton = document.querySelector('.submit-button');
+
+            submitButton.addEventListener('click', function() {
+                alert("Form submitted successfully!"); 
+            });
+        });
+    </script>
+</body>
+</html>

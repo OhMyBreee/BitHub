@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum Reply</title>
+    <link rel="stylesheet" href="FR.css">
+</head>
+<body>
+    <div class="background">
+        <!-- <img src="/assets/bg_bHub.jpg" alt="no img found"> -->
+    </div>
+    <div class="content">
+        <div class="title-and-picture">
+            <img src="/assets/profilepic.png" class="user-profile-picture" alt="User Profile Picture">
+            <div class="title">Title</div>
+        </div>
+        <div class="subforum-description">Description</div>
+    </div>
+    <div class="replies-box">
+        <div class="replies">
+            <div class="reply-statement">Replies</div>
+            <div class="reply">
+                <div class="replies-description">
+                    <img src="/assets/profilepic.png" class="picture" alt="User Profile Picture">
+                    <div class="description"></div>
+                </div>
+            </div>
+            <div class="reply">
+                <div class="replies-description">
+                    <img src="/assets/profilepic.png" class="picture" alt="User Profile Picture">
+                    <div class="description"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+        <div class="cancel-button">Cancel</div>
+        <div class="reply-button">Reply</div>
+    </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    var cancelButton = document.querySelector('.cancel-button');
+
+    cancelButton.addEventListener('click', function() {
+        window.location.href = "discussionForm.html"; 
+    });
+
+    var replyButton = document.querySelector('.reply-button');
+
+    replyButton.addEventListener('click', function() {
+        window.location.href = "replyPopUp.html"; 
+    });
+});
+
+</script>
+ 
+    
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Sidebar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="background"></div>
+
+    <header class="header padding">
+        <div class="logo-container">
+            <img src="Images/Design Logo.png" alt="BitHub" class="BitHub">
+        </div>
+        <div class="flex">
+            <form class="search-form">
+                <input type="search" placeholder="Search...">
+            </form>
+            <button class="button">
+                <img src="Images/Settings.png" alt="Settings" class="logo">
+            </button>
+        </div>
+        <button class="menu-toggle" aria-label="Toggle sidebar">
+            <img src="Images/Menu.png" alt="Menu">
+        </button>
+    </header>
+
+    <div class="sidebar">
+        <div class="links">
+            <hr>
+            <div class="Home">
+                <a href="">
+                    <img src="./Images/Home.png" alt="Home">
+                    <br>
+                    <span class="inter-font">Home</span>
+                </a>
+            </div>
+            <hr>
+            <a href="../HCI_Clarissa&Michelle_DiscussionForm/discussionForm.html">
+                <img src="./Images/Discussion .png" alt="Discussion">
+                <br>
+                <span class="inter-font">Discussion</span>
+            </a>
+            <hr>
+            <a href="../HCI_Bryan_Problems/index.html">
+                <img src="./Images/Daily Problem.png" alt="Daily Problems">
+                <br>
+                <span class="inter-font">Daily Problems</span>
+            </a>
+            <hr>
+            <a href="../HCI_Bryan_Leaderboard/New folder (2)/index.html">
+                <img src="./Images/Leaderboard.png" alt="Leaderboard">
+                <br>
+                <span class="inter-font">Leaderboard</span>
+            </a>
+            <hr>
+            <a href="../HCI_Danis_Feedback/Feedback.html">
+                <img src="./Images/feedback.png" alt="Contest">
+                <br>
+                <span class="inter-font">Feedback</span>
+            </a>
+            <hr>
+        </div>
+        <a href="../HCI_Jeisen_Profile/HCI_Jeisen&Bryan_Profile/index.html" class="profile-link inter-font">
+            <img src="Images/Profile Picture.png" alt="no img found" id = "profilePic">
+            <span  class = "inter-font">Profile</span>
+        </a>
+    </div>
+
+    <div class="main-content">
+        <div class="activity-container">
+            <div class="homepage">
+                Activity
+                <div class="dprobs">
+                    Daily Problems:
+                    <br>
+                    <img src="./Images/home/progress bar.png" alt="Progress Bar">
+                </div>
+                <div class="mainlboard">
+                    Leaderboard:
+                    <br>
+                    <img src="./Images/home/leaderboard box.png" alt="Leaderboard Box">
+                </div>
+                <div class="trendingdisc">
+                    Trending Discussion:
+                    <br>
+                    <img src="./Images/home/question1.png" alt="Question 1">
+                    <img src="./Images/home/question2.png" alt="Question 2">
+                    <img src="./Images/home/question1.png" alt="Question 1">
+                    <img src="./Images/home/question2.png" alt="Question 2">
+                    <img src="./Images/home/question1.png" alt="Question 1">
+                </div>
+            </div>
+        </div>
+        <div class="updates-container">
+            <div class="updates">
+                Updates:
+                <div class="updatelogs">
+                    <p>Update 0.1</p>
+                    <ul>
+                        <li>Bug Fixes</li>
+                        <li>Stabilization Improvement</li>
+                        <li>Added Feedback</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src = "script.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="RTU.css">
+
+
+</head>
+<body>
+    <div class="background">
+        <!-- <img src="/assets/bg_bHub.jpg" alt="no img found"> -->
+    </div>
+    <div class="replies-description">
+        <img src="/assets/profilepic.png" class="picture" alt="User Profile Picture">
+    </div> 
+    <div class="button-container">
+        <div class="cancel-button">Cancel</div>
+        <div class="reply-button">Reply</div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var cancelButton = document.querySelector('.cancel-button');
+
+            cancelButton.addEventListener('click', function() {
+                window.location.href = "ForumReply.html"; 
+            });
+            var replyButton = document.querySelector('.reply-button');
+
+            replyButton.addEventListener('click', function() {
+                window.location.href = "discussionForm.html"; 
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --black: #0B1016;
+    --white: #f2f2f2;
+    --purple: #312f61;
+    --dark-purple: #222145;
+    --grey: #B3B3B3;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+}
+
+body::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari, and Opera */
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #222145;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-padding {
+    position: sticky;
+    top: 0;
+    height: 10vh;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    z-index: 100;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.BitHub {
+    max-height: 120px;
+    width: auto;
+}
+.search-link{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.search-icon{
+    position: absolute;
+    right:70px;
+    top:auto ;
+    width: 20px;
+    height: 20px;
+    /* border-radius: 50%; */
+    background: none;
+}
+
+.search-form{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+    padding-right: 35px;
+}
+
+.search-form input[type="search"] {
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.logo-settings{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 55px;
+    padding: 3px;
+    width: 55px;
+    border-radius: 15px;
+    background-color: #20244F;
+    border: none;
+}
+
+.logo-settings img{
+    
+    height: 45px;
+}
+
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+}
+
+.head-feedback {
+    margin-left: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-right: auto;
+    width: auto;
+    color: #000000;
+    outline: none;
+    background-color: #D9D9D9;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 10px;
+    font-style: normal;
+}
+
+.profile-link {
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.profile-img {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(+45%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: none;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding:20px;
+    padding-left: 60px;
+    border: 0;
+    margin: 10px 0;
+    
+    outline: none;
+    background: #f5f5f5;
+    font-size: 14px;
+    border-radius: 10px;
+    font-style: italic;
+}
+
+#email{
+    padding: 20px;
+}
+
+form {
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    /* padding: 2vw 4vw; */
+    margin: auto;
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 1px;
+    width: 90%;
+    border-radius: 60px;
+}
+
+form h3 {
+    color: #222145;
+    font-weight: 800;
+}
+
+form input:valid {
+    font-style: normal;
+}
+
+
+.button-container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 350px;
+    margin-right: 350px;
+    margin-bottom: 40px;
+}
+
+.submit-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 150px; /* Corrected width */
+    font-weight: bold;
+    background: none;
+    color: #222145;
+    
+}
+
+.submit-button:hover {
+    background-color: #222145;
+    color: #fff;
+}
+
+.cancel-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1em;
+    width: 150px;
+    font-weight: bold;
+    background: none;
+    color: #222145;
+}
+
+.cancel-button:hover {
+    background-color: #222145;
+    color: #fff;
+}
+
+
+textarea {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    padding: 20px;
+    outline: none;
+    resize: none;
+    font-size: 14px;
+    margin: 10px 0;
+    border: 0;
+    border-radius: 10px;
+    background: #f5f5f5;
+}

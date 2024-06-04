@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel = "stylesheet" href = "styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <script src = "script.js"></script>
+</head>
+<body>
+    <img src="Images/Background.png" alt="background" class = "Background">
+    <!-- <div class = "container"> -->
+    <header class = "header padding">
+        <img src="Images/Design Logo.png" alt="" class = "BitHub">
+        <!-- <a href = ""> -->
+            <div class = "flex">
+                <form class="search-form">
+                    <input type="search" placeholder="Search...">
+                </form>
+                <button class = "button">
+                    <img src="Images/Settings.png" alt="" class="logo">
+                </button>
+            </div>
+        <!-- </a> -->
+    </header>
+
+    <div class="sidebar">
+        <div class="links">
+            <hr>
+            <div class="Home">
+                <a href="../../HCI_RevisiHome_Jeisen/index.html">
+                    <img src="Images/Home.png" alt="no img found"><br>
+                    <span class = "inter-font">Home</span>
+                </a>
+            </div>
+            <hr>
+            <a href="../../HCI_Clarissa&Michelle_DiscussionForm/discussionForm.html">
+                <img src="Images/Discussion .png" alt="no img found"><br>
+                <span class = "inter-font">Discussion</span> 
+            </a>
+            <hr>
+            <a href="../../HCI_Bryan_Problems/index.html">
+                <img src="Images/Daily Problem.png" alt="no img found"><br>
+                <span class = "inter-font">Daily Problems</span>
+            </a>
+            <hr>
+            <a href="../../HCI_Bryan_Leaderboard/New folder (2)/index.html">
+                <img src="Images/Leaderboard.png" alt="no img found"><br>
+                <span class = "inter-font">Leaderboard</span>
+            </a>
+            <hr>
+            <a href="../../HCI_Danis_Feedback/Feedback.html">
+                <img src="Images/feedback.png" alt="no img found"><br>
+                <span class = "inter-font">Feedback</span>
+            </a>
+            <hr>
+        </div>
+        <a href="../../HCI_Jeisen_Profile/HCI_Jeisen&Bryan_Profile/index.html" class="profile-link inter-font">
+            <img src="Images/Profile Picture.png" alt="no img found" id = "profilePic">
+            <span  class = "inter-font">Profile</span>
+        </a>
+    </div>
+
+    <div class="main-content">
+        <div class = "flex-column">
+            <div class = "leaderboard-title">
+                <span class="title">Leaderboard</span>
+                <div class = "justifyFlex inter-font dropdown-container">
+                        <select id="country" class="dropdown" >
+                            <option value="" disabled selected>Country</option>
+                            <option value="option">Indonesia</option>
+                            <option value="option">Japan</option>
+                            <option value="option">America</option>
+                            <option value="option">Russia</option>
+                        </select>
+                        <select id="Tournament" class="dropdown" >
+                            <option value="" disabled selected>Tournament</option>
+                            <option value="option">Code Fest 000</option>
+                            <option value="option">Code Fest 000</option>
+                            <option value="option">Code Fest 000</option>
+                            <option value="option">Code Fest 000</option>
+                        </select>
+                </div>
+            </div>
+            <div class = "container">
+                <div class = "justifyFlex gap inter-font" >
+                    <div class = 'tableHead'>
+                        <div class = "Rank">Rank</div>
+                        <div class = "Username">Username</div>
+                        <div class = "Average">Average RunTime</div>
+                        <div class = "Problem_Solved">Problem Solved</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items darkpurple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+                    <div class = 'items purple '>
+                        <div class = "Rank">1.</div>
+                        <div class = "Username">BukanBryan</div>
+                        <div class = "Average">0ms</div>
+                        <div class = "Problem_Solved">10/10</div>
+                    </div>
+        </div>
+        </div>
+    </div>
+    <div class = "rightbar">
+        <div class = "user">
+            <img src="Images/Profile Picture.png" alt="BukanSteven" class = "profile_picture">
+            <div class = "Name inter-font">BukanSteven</div>
+            <div class = "rank inter-font">Rank 007</div>
+            <div class = "Time inter-font">6.9ms (11/100)</div>
+        </div>
+            <input type="search" placeholder="Search" class = "search inter-font">
+            <div class ="event">
+                <div class = "title">Events</div>
+                <div class = "event-container">
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                    <div class = "eventItem">
+                        <img src="Images/Design Logo.png" alt="" class = "profile_picture">
+                        <div class = "title">GEMASTIK</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+</body>
+</html>
