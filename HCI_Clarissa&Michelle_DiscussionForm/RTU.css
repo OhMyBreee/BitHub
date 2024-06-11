@@ -1,36 +1,62 @@
-body {
-    font-family: "Inter", sans-serif;
-    margin: 0;
+*{
+    margin:0;
     padding: 0;
+    font: inherit;
+  }
+  
+  h1,h2,h3,h4,h5{
+    text-wrap:balance;
+  }
+  
+  p{
+    text-wrap: pretty; /* to make sure there is no orphans ->lonely words*/
+    max-width: 64ch;
+  }
+  
+  html{
+    hanging-punctuation: first last;
+    /* color-scheme: dark light; */
+  }
+  
+  body{
+    min-height: 100svh;
     display: flex;
     flex-direction: column;
-
+    align-items: center;
+    justify-content: center;
+  }
   
-}
+  img,
+  picture,
+  svg,
+  video{
+    display:block;
+    max-width: 100%;
+  }
+
 
 .background {
     position: fixed; 
     width: 100%;
     height: 100vh;
-    background-image: url('/assets/bg_bHub2.jpg');
+    background-image: url('assets/bg_bHub2.jpg');
     background-size: cover;
     background-position: center;
     z-index: -1; 
 }
 
 .replies-description{
-
-    width: 1350px;
-    height: 400px;
+    display: flex;
+    gap: 1svw;
+    width: 85%;
+    height: 50svh;
     border-radius: 10px;
-    margin-top: 50px;
-    margin-left: 50px;
     background-color: whitesmoke;
+    padding: 2svw;
 }
 .picture{
     width: 40px;
     height: 40px;
-    margin-right: 90%;
     margin-top: 10px;
     border-radius: 50%; 
     margin-left: 10px;
@@ -64,3 +90,39 @@ body {
 .cancel-button:hover{
     color: palevioletred;
 }
+
+#reply{
+    padding: 1svw;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    height: 100%;
+    vertical-align: top;
+    display: flex;
+    align-items: flex-start;
+    border: none;
+    outline: none;
+    line-height: normal;
+    /* padding: 0; */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+textarea{
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    padding: 20px;
+    outline: none;
+    resize: none;
+    font-size: 1svw;
+    margin: 10px 0;
+    border: 0;
+    border-radius: 10px;
+    background: #f5f5f5;
+}
+
+.montserrat-400 {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
