@@ -80,12 +80,15 @@ body{
     flex: 0 0 auto;
 }
 
+.wrapper .item:hover{
+    background-color: var(--orange);
+}
+
 .icon{
     width: 30%;
     min-width: 50px;
     height: auto;
     padding-right: 1em;
-    
 }
 
 .Background {
@@ -497,7 +500,11 @@ body{
     padding-left: 3em;
     gap:1em;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 1.1svw;
+    text-align: left;
+    border: none;
+    outline: none;
+    color: white;
 }
 
 .vert-wrapper .title{
@@ -511,7 +518,7 @@ body{
     align-items: center;
     padding-left: 3em;
     gap:1em;
-    font-size: 20px;
+    font-size: 1svw;
 }
 
 .lightP{
@@ -544,14 +551,14 @@ body{
     /* height: 98%; */
 }
 
-.Medium{
+#Medium{
     background-color: var(--orange);
 }
 
-.Hard{
+#Hard{
     background-color: var(--red);
 }
 
-.Easy{
+#Easy{
     background-color: var(--green);
 }

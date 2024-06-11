@@ -460,6 +460,7 @@ body::-webkit-scrollbar {
     padding:1em;
     flex-direction: column;
     flex-grow: 0;
+    border: none;
 }
 
 .profile_picture{

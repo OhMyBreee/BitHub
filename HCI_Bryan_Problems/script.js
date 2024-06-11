@@ -29,34 +29,74 @@ wrapper.addEventListener('mousemove', (e) => {
     wrapper.scrollLeft = scrollLeft - walk;
 });
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    const items = document.querySelectorAll('.wrapper .item');
 
-// const vert_wrapper = document.getElementById('vert-scrollable');
+    items.forEach(item => {
+        // item.addEventListener('mouseover', () => {
+        //     item.style.backgroundColor = '#E78618'; // Set your desired hover color
+        //     item.style.transform = 'scale(1.05)';
+        //     item.style.transition = 'all 0.3s ease';
+        // });
 
-// let vert_isDown = false;
-// let startY;
-// let scrollTop;
+        // item.addEventListener('mouseout', () => {
+        //     item.style.backgroundColor = 'var(--blue)';
+        //     item.style.transform = 'scale(1)';
+        // });
 
-// wrapper.addEventListener('mousedown', (e) => {
-//     vert_isDown = true;
-//     vert_wrapper.classList.add('active');
-//     startY = e.pageY - vert_wrapper.offsetTop;
-//     scrollTop = vert_wrapper.scrollTop;
-// });
+        item.addEventListener('click', () => {
+            // Reset the styles for all items
+            const selectedTopic = item.getAttribute('data-topic');
+            filtercategory(selectedTopic);
 
-// vert_wrapper.addEventListener('mouseleave', () => {
-//     isDown = false;
-//     vert_wrapper.classList.remove('active');
-// });
+            items.forEach(i => {
+                i.style.backgroundColor = 'var(--blue)';
+                i.style.transform = 'scale(1)';
+            });
 
-// vert_wrapper.addEventListener('mouseup', () => {
-//     vert_isDown = false;
-//     vert_wrapper.classList.remove('active');
-// });
+            // Apply styles to the clicked item
+            item.style.backgroundColor = '#E78618'; // Set your desired click color
+            // item.style.transform = 'scale(1.1)';
+            item.style.transition = 'all 0.3s ease';
+        });
+    });
+    // Function to filter problems
+    function filterProblems() {
+        // Get the value of the search input
+        const searchValue = document.getElementById('problemSearch').value.toLowerCase();
+        
+        // Get the value of the difficulty filter
+        const difficultyValue = document.getElementById('difficultyFilter').value;
+        
+        // Get all problem items
+        const problemItems = document.querySelectorAll('.vert-wrapper .item');
+        
+        // Loop through each problem item
+        problemItems.forEach(item => {
+            // Get the problem title
+            const title = item.querySelector('.Title').textContent.toLowerCase();
+            
+            // Get the problem difficulty
+            const difficulty = item.querySelector('.Diff').textContent;
+            
+            // Check if the title includes the search value and matches the difficulty
+            const titleMatches = title.includes(searchValue);
+            const difficultyMatches = difficultyValue ? difficulty === difficultyValue : true;
+            
+            // Show or hide the item based on the search and difficulty filters
+            if (titleMatches && difficultyMatches) {
+                item.style.display = '';
+            } else {
+                item.style.display = 'none';
+            }
+        });
+    }
+    
+    // Add event listeners to the search input and difficulty filter
+    document.getElementById('problemSearch').addEventListener('input', filterProblems);
+    document.getElementById('difficultyFilter').addEventListener('change', filterProblems);
+});
 
-// vert_wrapper.addEventListener('mousemove', (e) => {
-//     if (!vert_isDown) return;
-//     e.preventDefault();
-//     const y = e.pageY - vert_wrapper.offsetTop;
-//     const walk = (y - startY) * 3; // The multiplier can be adjusted for faster/slower scroll
-//     vert_wrapper.scrollTop = scrollTop - walk;
-// });
+function gotoproblems(){
+    window.location.href = "../Problems Fix/Problems.html"
+}
