@@ -63,39 +63,39 @@
         <div class="wrapper" id="scrollable">
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">All Topics</text>
+                <text class="topic" value = " ">All Topics</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">BFS</text>
+                <text class="topic" value = "BFS">BFS</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">DP</text>
+                <text class="topic" value = "DP">DP</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">Trees</text>
+                <text class="topic" value = "Trees">Trees</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">Array</text>
+                <text class="topic" value = "Array">Array</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">Sorting</text>
+                <text class="topic" value = "Sorting">Sorting</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">Searching</text>
+                <text class="topic" value = "Searching">Searching</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">Implementation</text>
+                <text class="topic" value = "Implementation">Implementation</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
-                <text class="topic">Math</text>
+                <text class="topic" value = "Math">Math</text>
             </div>
             <div class="item inter-font">
                 <img src="Images/all-inclusive.png" alt="." class="icon">
@@ -143,11 +143,131 @@
                 <div class="Diff">Difficulty</div>
                 <span class="Acc-rate">Acceptance Rate</span>
             </div>
-            <button class="item darkP" onclick = "gotoproblems()">
+            <button class="item darkP" onclick = "gotoproblems()" data-topic = "BFS">
                 <span class="Problem">0000</span>
                 <span class="Title">Dinner at Bibi's</span>
-                <div class="Diff"id = "Medium">Medium</div>
+                <div class="Diff" id = "Medium">Medium</div>
                 <span class="Acc-rate">10.00%</span>
+            </button>
+            <button class="item lightP" onclick = "gotoproblems()" data-topic="DP">
+                <span class="Problem">0000</span>
+                <span class="Title">White Knight Black Knight</span>
+                <div class="Diff" id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()" data-topic = "BFS">
+                <span class="Problem">0000</span>
+                <span class="Title">Alphabet Converter</span>
+                <div class="Diff"id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item lightP"  onclick = "gotoproblems()" data-topic = "Trees">
+                <span class="Problem">0000</span>
+                <span class="Title">Desperate Horse</span>
+                <div class="Diff" id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()"data-topic = "Trees">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()"data-topic = "Trees">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item lightP" onclick = "gotoproblems()" data-topic = "Searching">
+                <span class="Problem">0000</span>
+                <span class="Title">White Knight Black Knight</span>
+                <div class="Diff"id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()" data-topic = "Implementation">
+                <span class="Problem">0000</span>
+                <span class="Title">Alphabet Converter</span>
+                <div class="Diff"id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item lightP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Desperate Horse</span>
+                <div class="Diff" id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item lightP" onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">White Knight Black Knight</span>
+                <div class="Diff"id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Alphabet Converter</span>
+                <div class="Diff"id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item lightP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Desperate Horse</span>
+                <div class="Diff" id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item lightP" onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">White Knight Black Knight</span>
+                <div class="Diff"id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Alphabet Converter</span>
+                <div class="Diff"id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item lightP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Desperate Horse</span>
+                <div class="Diff" id = "Hard">Hard</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
+            </button>
+            <button class="item darkP"  onclick = "gotoproblems()">
+                <span class="Problem">0000</span>
+                <span class="Title">Jojonacci</span>
+                <div class="Diff" id = "Easy">Easy</div>
+                <span class="Acc-rate">0.00%</span>
             </button>
             <button class="item lightP" onclick = "gotoproblems()">
                 <span class="Problem">0000</span>

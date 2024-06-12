@@ -29,6 +29,17 @@ wrapper.addEventListener('mousemove', (e) => {
     wrapper.scrollLeft = scrollLeft - walk;
 });
 
+function filtercategory(topic) {
+    const buttons = document.querySelectorAll('.vert-wrapper .item');
+    buttons.forEach(button => {
+        if (button.getAttribute('data-topic') === topic || topic === " " && topic != null) {
+            button.style.display = 'grid';
+        } else {
+            button.style.display = 'none';
+        }
+    });
+}
+
 document.addEventListener('DOMContentLoaded', (event) => {
     const items = document.querySelectorAll('.wrapper .item');
 
@@ -45,14 +56,16 @@ document.addEventListener('DOMContentLoaded', (event) => {
         // });
 
         item.addEventListener('click', () => {
-            // Reset the styles for all items
-            const selectedTopic = item.getAttribute('data-topic');
-            filtercategory(selectedTopic);
 
             items.forEach(i => {
                 i.style.backgroundColor = 'var(--blue)';
                 i.style.transform = 'scale(1)';
             });
+            // Reset the styles for all items
+            const selectedTopic = item.getElementsByClassName("topic")[0].getAttribute("value");
+            console.log(selectedTopic);
+            filtercategory(selectedTopic);
+
 
             // Apply styles to the clicked item
             item.style.backgroundColor = '#E78618'; // Set your desired click color
